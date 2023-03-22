@@ -1,0 +1,381 @@
+.container {
+  display: grid;
+  justify-content: center;
+  ;
+  background-image: url(../images/dupliranapozadina.png);
+  background-color: var(--background-color);
+  background-position: fixed;
+  background-repeat: no-repeat;
+  /*background-size: cover;*/
+  background-size: auto;
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.div2 {
+  margin-left: 390px;
+  margin-right: 390px;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.buttonNav {
+  background-color: var(--background-color);
+}
+
+.buttonNav:hover {
+  background-color: #090d13;
+}
+
+body {
+  background-color: #101823;
+}
+
+* {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.formaDiv {
+  margin-top: 10vh;
+  font-size: 30px;
+  /*background-color: #272727;*/
+  background-color: #101823;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 500px;
+  /*box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.1),
+                inset 5px 5px 15px rgba(0, 0, 0, 0.8);*/
+}
+
+.tekst1 {
+  font-size: 25px;
+  width: 100%;
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  border: none;
+  border: 1px solid rgb(255, 255, 255);
+  ;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  margin-bottom: 10px;
+}
+
+.dugme1 {
+  font-size: 30px;
+  width: 100%;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid var(--main-color);
+  margin-bottom: 10px;
+  border-radius: 100px;
+}
+
+.dugme1:hover {
+  background-color: var(--button-hover-color);
+  border: 1px solid var(--button-hover-color);
+  color: white;
+}
+
+@font-face {
+  font-family: valorant;
+  src: url("../fonts/valorant.ttf")
+}
+
+.register {
+  padding-top: 20px;
+  color: white;
+  font-size: 100px;
+  margin-top: 100px;
+  font-family: valorant;
+}
+
+.hr {
+  margin-bottom: 20px;
+  ;
+}
+
+
+/*discord logo*/
+.discordlogo {
+  width: 31px;
+  height: 35px;
+  float: left;
+}
+
+.discordDugme {
+  font-size: 25px;
+  margin-top: 0px;
+  background-color: #6070aa;
+  color: #ffffff;
+  border: 1px solid #6070aa;
+  border-radius: 100px;
+}
+
+.discordDugme:hover {
+  background-color: #474f6d;
+  border: 1px solid #474f6d;
+  color: white;
+}
+
+
+
+
+.forgotPassword {
+  font-family: 'Raleway', sans-serif;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  float: right;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+  transition-duration: 0.4s;
+  border: none;
+}
+
+.forgotPassword:hover {
+  color: rgb(152, 147, 158);
+}
+
+
+.loginWidth {
+  width: 350px;
+}
+
+.donthaveanaccount {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+
+
+.info {
+  z-index: 0;
+  order: 0;
+  text-align: left;
+  padding: 30px;
+  border: 2px solid var(--main-color);
+
+}
+
+.innerInfo {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-gap: 10px;
+}
+
+.yourAvatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.custom-file-upload:hover {
+  opacity: 1;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.custom-file-upload {
+
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  height: 150px;
+  font-size: 23px;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: center;
+  vertical-align: middle;
+  background-color: rgba(0, 0, 0, 0.623);
+  display: inline-block;
+  cursor: pointer;
+  padding-top: 50px;
+  padding-bottom: 32px;
+  transition-duration: 0.4s;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.loginplease {
+  text-align: center;
+  font-family: valorant;
+  font-size: 70px;
+  margin-top: 50%;
+  margin-bottom: 40%;
+}
+
+
+.sejv
+{
+  float:right;font-size:25px;
+  width:250px;
+}
+
+/*Avatar toggle preference*/
+.avatarToggle {
+  width: 150px;
+  font-size: 30px;
+  border: none;
+  text-align: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: rgb(0, 0, 0);
+  color: white;
+}
+
+.avatarToggle:hover {
+  background-color: var(--button-hover-color);
+}
+
+.avatarToggleDiscord {
+  background-color: #6070aa;
+  color: white;
+}
+
+.avatarToggleDiscord:hover {
+  background-color: #434f79;
+}
+
+.success {
+  color: greenyellow;
+}
+
+.error {
+  color: var(--main-color);
+}
+
+.nav_links li a:hover {
+  color: var(--main-color);
+}
+
+.navTreci:hover {
+  color: black;
+}
+@media screen and (max-width:1600px) {
+  .div2 {
+    margin-left: 320px;
+    margin-right: 320px;
+  }
+}
+
+@media screen and (max-width:1400px) {
+  .div2 {
+    margin-left: 300px;
+    margin-right: 300px;
+  }
+}
+
+@media screen and (max-width:950px) {
+  .pushdown {
+    margin-bottom: 0;
+  }
+
+  .pushdown2 {
+    margin-bottom: 175px;
+  }
+  .sejv
+  {
+    width:100%;
+  }
+}
+
+@media screen and (max-width:690px) {
+  .container {
+    background-image: none;
+    background-color: var(--background-color);
+  }
+
+  .pushdown2 {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width:500px) {
+  .error
+  {
+    font-size:25px;
+  }
+  .success
+  {
+    font-size:25px;
+  }
+  .formaDiv
+  {
+    min-width:270px;
+    max-width: 500px;;
+  }
+  .tekst2
+  {
+    font-size:25px;
+  }
+  .dugme1
+  {
+    min-width:270px;
+    max-width: 500px;
+    font-size:25px;
+  }
+  .tekst1
+  {
+    min-width:270px;
+    max-width: 500px;;
+  }
+  .info
+  {
+    padding:4px;
+  }
+  .innerInfo {
+    grid-template-columns: 1fr;
+    grid-template-rows:1fr 1fr;
+  }
+  .custom-file-upload
+  {
+    margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+  }
+  .i1
+  {
+    text-align: center;;
+  }
+  .div2 {
+    margin-left:0px;
+    margin-right: 0px;
+  }
+  .sejv
+  {
+    float:none;
+    text-align: center;
+    min-width:270px;
+    max-width: 500px;;
+  }
+}
+@media screen and (max-width:400px) {
+
+}

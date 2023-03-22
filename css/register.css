@@ -1,0 +1,269 @@
+.container
+{
+    display:grid;
+    grid-template-columns: 2fr 1.25fr;
+}
+.div1
+{
+    background-image:url(../images/Valorant1.jpg);
+    background-position: fixed;
+    background-repeat: no-repeat;
+    /*background-size: cover;*/
+    background-size: auto;
+    background-size: 165% 110%;
+    height:100vh;
+}
+/**/
+.registration{background-image:url(../images/Valorant1.jpg);}
+header
+{
+    background-color:rgba(0, 0, 0, 0);
+}
+body
+{
+    background-color:#101823;
+}
+
+.formaDiv
+{
+    margin-top:25vh;
+    width:500px;
+    font-size: 30px;
+    /*background-color: #272727;*/
+    background-color:#101823;
+    
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+
+    /*box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.1),
+                inset 5px 5px 15px rgba(0, 0, 0, 0.8);*/
+  }
+.tekst1
+{
+  font-size:30px;
+  width:300px;
+  color:rgb(255, 255, 255); 
+  padding:8px;border:none;
+  border-bottom:1px solid #ccc;;
+  background-color: rgba(255, 255, 255, 0);
+  margin-bottom:10px;
+}
+.dugme1
+{
+  font-size:30px;
+  width:250px;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid var(--main-color);
+  margin-bottom: 10px;
+  border-radius: 100px;
+}
+.dugme1:hover {
+    background-color: var(--button-hover-color);  
+    border: 1px solid var(--button-hover-color);
+    color: white;
+}
+@font-face
+{
+    font-family: valorant;
+    src: url("../fonts/valorant.ttf")
+}
+
+.register
+{
+  padding-top:20px;
+  color:white;
+  font-size: 100px;
+  margin-top:100px;
+  font-family: valorant;
+}
+.hr
+{
+  margin-bottom: 20px;;
+}
+
+
+/*discord logo*/
+.discordlogo
+{
+  width:31px;height:35px;
+  float:left;
+}
+.discordDugme
+{
+  font-size:25px;
+  margin-top:0px;
+  background-color: #6070aa;
+  color: #ffffff;
+  border: 1px solid #6070aa;
+  border-radius: 100px;
+}
+.discordDugme:hover {
+    background-color: #474f6d;  
+    border: 1px solid #474f6d;
+    color: white;
+}
+
+
+
+
+.forgotPassword
+{
+  font-family: 'Raleway', sans-serif;
+  margin-right:15px;
+  margin-bottom:15px;
+  float:right;
+  color:white;
+  font-size:20px;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0);
+  transition-duration: 0.4s;
+  border:none;
+}
+.forgotPassword:hover
+{
+  color:rgb(152, 147, 158);
+}
+
+
+.loginWidth
+{
+  width:350px;
+}
+.donthaveanaccount
+{
+  font-family: 'Raleway', sans-serif;
+  color:white;
+}
+.registerA
+{
+  color:var(--main-color);
+}
+.registerA:hover
+{
+  color: var(--button-hover-color);
+}
+.error
+{
+  font-family: 'Raleway', sans-serif;
+  color:var(--main-color);
+  font-size:28px;
+}
+.success
+{
+  color:greenyellow;
+}
+@media screen and (max-width:4000px)
+{
+  .container{
+    grid-template-columns: 2fr 4fr;
+  }
+}
+@media screen and (max-width:3500px)
+{
+  .container{
+    grid-template-columns: 2fr 3.5fr;
+  }
+}
+@media screen and (max-width:3000px)
+{
+  .container{
+    grid-template-columns: 2fr 3fr;
+  }
+}
+@media screen and (max-width:2500px)
+{
+  .container{
+    grid-template-columns: 2fr 2fr;
+  }
+}
+@media screen and (max-width:1920px)
+{
+  .container{
+    grid-template-columns: 2fr 1.25fr;
+  }
+}
+@media screen and (max-width:1200px)
+{
+  .formaDiv{
+    width:350px;
+  }
+  .regPage
+  {
+    font-size:70px;
+  }
+}
+@media screen and (max-width:950px)
+{
+  header{
+    background-color: var(--background-color);
+  }
+  .container
+  {
+    grid-template-columns: 0fr 1fr;
+  }
+  .formaDiv
+  {
+    margin-top:2vh;
+  }
+}
+@media screen and (max-height:720px)
+{
+  
+  .formaDiv
+  {
+    margin-top:2vh;
+  }
+}
+@media screen and (max-width:500px)
+{
+  .regPage{font-size:60px;}
+  .formaDiv
+  {
+    width:300px;
+  }
+}
+@media screen and (max-width:360px)
+{
+    .register{
+      font-size:85px;
+    }
+    .regPage{font-size:50px;}
+    .tekst1
+    {
+      width:250px;
+    }
+    .donthaveanaccount
+    {
+      font-size:25px;
+    }
+    .forgotPassword
+    {
+      float:none;
+      clear: both;
+      display: block;
+      margin-right: 0;
+    }
+    .formaDiv
+    {
+      width:250px;
+    }
+}
+@media screen and (max-height:630px)
+{
+  .container
+  {
+    background-size:165% auto;;
+  }
+  .div1
+  {
+    height:630px;
+  }
+}

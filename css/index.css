@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&family=Raleway&display=swap');
+
+:root {
+  --main-color: #ff4654;
+  --button-hover-color: #862d34;
+  --background-color: #101823;
+}
+@font-face
+{
+    font-family: valorant;
+    src: url("../fonts/valorant.ttf")
+}
+header{
+  background-color: transparent;
+}
+body
+{
+  
+  overflow-y: hidden;
+  margin:0;
+  padding:0;
+}
+.container
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  color:white;
+  background-color: #101823;
+  text-align: center;
+  transition: all 0.3s ease 0s;
+  transition: background-color 0.1s linear;
+  
+}
+.div1,.div2
+{
+  font-family: valorant;
+  
+  font-size:80px;
+  height:100%;
+  vertical-align: middle;
+  transition: background-color 0.1s linear;
+}
+.div2{
+}
+.div1{
+  background-color:var(--main-color);
+}
+
+.imageContainer
+{
+  position: relative;
+  text-align: center;
+}
+.imgtxt
+{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    color:black;
+    cursor:pointer;
+}
+.imgtxt .omen
+{
+  left:75%;
+}
+.sage,.omen
+{
+  margin-top: 120px;
+  transition: transform 0.1s linear;
+  height:800px;
+  
+  width:900px;
+  transition: height 0.1s linear;
+  transition: width 0.1s linear;
+}
+.sage
+{
+  transition: transform 0.1s linear;
+  margin-top: 100px;;
+
+}
+.omen
+{
+  transition: transform 0.1s linear;
+  
+}
+.agenthover
+{
+  transform: scale(1.05);
+}
+.playerstxt
+{
+  background-color: var(--background-color);
+  color: White;
+  padding:20px 20px 5px 20px;
+  align-items: center;
+  text-shadow: 5px 5px #3ddec1;
+  top: 51.2%;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.playerstxtHover{
+  box-shadow: 5px 10px #3ddec1;
+}
+.teamstxt
+{
+  background-color: var(--main-color);
+  color: white;
+  padding:20px 20px 5px 20px;
+  text-shadow: 5px 5px var(--background-color);
+  transition: box-shadow 0.3s ease-in-out;
+}
+.teamstxtHover{
+  box-shadow: 5px 10px rgb(255, 255, 255);
+}
+.overlay
+{
+  position:absolute;
+  background-color: var(--main-color);
+  color:transparent;
+  z-index: 0;
+  height:100%;
+  width:50%;
+  transition: background-color 0.1s linear;
+}
+.overlay2{
+  background-color: var(--background-color);
+}
+/*temp classes*/
+.bgBlue{background-color: var(--background-color);}
+.bgRed{background-color: var(--main-color);}
+.bgBlueHover{background-color: #0b1018;}
+.bgRedHover{background-color: #d33845;}
+.pocetniImg
+{
+  position:absolute;
+  width:100%;
+  height:100%;
+}
+.normalanImg
+{
+  position:absolute;width:100%;height:100%;opacity:0;
+  transition: opacity 0.2s linear;
+}
+.imgopacity1
+{
+  opacity:1;
+}
+
+@media screen and (max-height:900px),screen and (max-width:1800px)
+{
+  .sage,.omen{
+    width:800;
+    height:700px;
+  }
+  .sage{
+    margin-top:50px;
+  }
+  .omen{
+    margin-top: 70px;;
+  }
+  .div1{
+    height:90%;
+  }
+  .div2{
+    height:90%;
+  }
+  .normalanImg{
+    height:100%;
+  }
+  .pocetniImg
+  {
+    height:100%;
+  }
+  .imgtxt{
+    font-size:75px;
+  }
+  .playerstxt{
+    text-shadow: 4px 4px #3ddec1;
+  }.teamstxt{
+    text-shadow: 4px 4px var(--background-color);
+  }
+}
+@media screen and (max-height:800px),screen and (max-width:1600px)
+{
+  .sage,.omen{
+    width:700;
+    height:600px;
+  }
+  .imgtxt{
+    font-size:60px;
+  }
+  .playerstxt , .teamstxt{
+    padding:15px 15px 3.75px 15px;
+  }
+  .playerstxt{
+    text-shadow: 3px 3px #3ddec1;
+  }.teamstxt{
+    text-shadow: 3px 3px var(--background-color);
+  }
+}
+@media screen and (max-height:700px),screen and (max-width:1400px)
+{
+  .sage,.omen{
+    width:600;
+    height:510px;
+  }
+  .imgtxt{
+    font-size:50px;
+  }
+  .playerstxt , .teamstxt{
+    padding:15px 15px 3.75px 15px;
+  }
+  .playerstxt{
+    top: 51.4%;
+  }
+}
+@media screen and (max-height:600px),screen and (max-width:1200px)
+{
+  .sage,.omen{
+    width:500;
+    height:420px;
+  }
+  .imgtxt{
+    font-size:40px;
+  }
+  .playerstxtHover{
+    box-shadow: 4px 8px #3ddec1;
+  }
+  .teamstxtHover{
+    box-shadow: 4px 8px rgb(255, 255, 255);
+  }
+  .playerstxt , .teamstxt{
+    padding:10px 10px 2.5px 10px;
+  }
+}
+@media screen and (max-height:500px),screen and (max-width:1000px)
+{
+  .sage,.omen{
+    width:400;
+    height:350px;
+  }
+  .imgtxt{
+    font-size:35px;
+  }
+  .playerstxt , .teamstxt{
+    padding:7.5px 7.5px 2px 7.5px;
+  }
+}
+@media screen and (max-width:950px)
+{
+  body{
+    overflow-y: visible;
+  }
+  .pushdown{
+    margin-bottom:140px;
+  }
+  header {
+    background-color: var(--background-color);
+  }
+  .div1{
+    height:110%;
+  }
+  .div2{
+    background-color: var(--background-color);
+    height:110%;
+  }
+  .bgBlueHover{background-color: #0b1018;}
+  .sage,.omen{
+    margin-top: 0px;
+  }
+  .omen{
+    margin-top:40px;
+  }
+  .container{
+    grid-template-columns: 1fr;
+  }
+  .pocetniImg{
+    display: none;
+  }
+  .normalanImg{
+    display:none;
+  }
+}
+@media screen and (max-width:690px)
+{
+  .pushdown{
+    margin-bottom:0px;
+  }
+}
+@media screen and (max-width:410px)
+{
+  .sage,.omen{
+    width:300;
+    height:250px;
+  }
+}
+@media screen and (max-width:300px)
+{
+  .sage,.omen{
+    width:200;
+    height:150px;
+  }
+  .imgtxt{
+    font-size:25px;
+  }
+  .playerstxt , .teamstxt{
+    padding:0px;
+  }
+}

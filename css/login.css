@@ -1,0 +1,48 @@
+
+.formaDiv
+{
+    margin-top:300px;
+    width:350px;
+    font-size: 30px;
+    /*background-color: #272727;*/
+    background-color:#101823;
+    padding: 10px;
+    text-align: center;
+    margin-left:auto;
+    margin-right:auto;
+
+    box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.1),
+                inset 5px 5px 15px rgba(0, 0, 0, 0.8);
+  }
+  form
+  {
+    background-color: #272727;
+  }
+.tekst1
+{
+  font-size:30px;
+  width:300px;
+  color:rgb(255, 255, 255); 
+  padding:8px;border:none;
+  border-bottom:1px solid #ccc;;
+  background-color: rgba(255, 255, 255, 0);
+  margin-bottom:10px;
+}
+.dugme1
+{
+  font-size:30px;
+  width:250px;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid var(--main-color);
+}
+.dugme1:hover {
+    background-color: #ff000073;  
+    color: white;
+}

@@ -1,0 +1,778 @@
+@font-face {
+    font-family: valorant;
+    src: url("../../fonts/valorant.ttf")
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap');
+.error{
+    background-color:var(--background-color);
+    color:red;
+    font-size:20px;
+    text-align: center;;
+}
+.formularTekstina{
+    width:310px;
+}
+.lfgposted{
+    width:100%;
+    font-size:30px;
+    text-align: center;
+    color:white;
+    background-color: #090d13;
+    height:50px;
+}
+#slike {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.55;
+}
+.sld {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow-y: hidden;
+}
+.flag{
+    width:20px;
+    height:15px;
+    margin-right:4px;
+}
+.rankImg{
+    widows: 30px;
+    height:25px;
+}
+.glavniContainer
+{
+    position: absolute;
+    font-family: 'Raleway', sans-serif;
+    z-index:90000;
+    
+    
+    color:rgb(0, 0, 0);
+    margin-top:230px;
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, 0);
+}
+.glavniContainer2{
+    display:grid;
+    grid-template-columns: 3.5fr 1fr;
+    grid-gap:20px;
+    grid-template-areas: "filteri formular";
+}
+.sld{
+    /*filter: blur(4px);*/
+}
+.marginTopFormular{
+    margin-top:75px;
+}
+.marginBottomFormular{
+    margin-bottom:50px;
+}
+.arrow{
+    position:absolute;
+    width:10px;
+    height:10px;
+    filter:invert(1);
+    left:276px;
+}
+
+.mainTekst{
+    font-size:100px;
+    font-family: valorant;
+    color:white;
+    text-shadow: 5px 10px var(--main-color);
+}
+.filteriTekst{
+    text-align: center;;
+    background-color: var(--main-color);
+    font-size:40px;
+    font-family: valorant;
+    color:rgb(255, 255, 255);
+    text-shadow: 1.5px 3.5px black;
+}
+
+
+
+.containerFilteriLfg{
+    display:block;
+    grid-area:filteri;
+    width:990px;
+}
+.filteri{
+    padding:5px;
+    color:white;
+    background: #090d13;
+    height:auto;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr  ;
+    justify-content: center;
+    justify-items: center;
+}
+.lfgs{
+    color:white;
+    font-size:20px;
+    height:auto;
+    margin-top:10px;
+}
+
+.formular{
+    grid-area: formular;
+    /*border:3px solid var(--main-color);*/
+    
+}
+.formularContainer{
+    background: #090d13;
+    font-size:20px;
+    color:white;
+    padding:10px;
+    height:730px;
+}
+.fcPlayers{
+    height:580px;
+}
+.Formular-tekst{
+    font-size:15px;
+}
+.formularTekstina{
+    text-align: center;;
+    background-color: var(--main-color);
+    font-size:40px;
+    font-family: valorant;
+    color:rgb(255, 255, 255);
+    text-shadow: 1.5px 3.5px    ;
+}
+
+header{
+    background-color: #10182300;
+}
+
+.lfgChild{
+    background-color:#090d13;
+    margin-bottom:10px;
+    border-radius: 25px;
+    
+}
+
+.pleaselogin{
+    background-color:#090d13;
+    height:170px;
+    color:white;
+    padding:10px;
+    font-size:20px;
+}
+.pleaseloginButton{
+    font-size:10px;
+}
+
+
+
+.lfgTittle{
+    font-size:25px;
+    border-bottom:1px solid #ccc;;
+    padding:2px;
+    padding-right:25px;
+    padding-left: 25px;;
+    
+    overflow-wrap: break-word;
+}
+.lfgPlayersRank{
+    grid-column:1/3;
+}
+
+.lfgContainer{
+    display:grid;
+    grid-template-columns:1fr 6fr;
+}
+.lfgAvatar{
+    padding:10px;
+    border-right:1px solid #ccc;;
+    
+}
+.lfgAvatarImg{
+    width:140px;
+    height:140px;
+    border-radius: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lfgContainer2{
+    display:grid;
+    grid-template-columns: 0.75fr 0.75fr 1fr 1fr ;
+    padding:10px;
+    grid-gap:10px;
+}
+
+.lfg-box{
+    text-align:center;
+    background-color:rgb(19, 75, 139);
+    background-color:rgb(42, 42, 42);
+    /*background-color: #1b1f2c;*/
+    width:100%;
+    padding:2px;
+    border-radius: 10px;
+}
+.playersneededgrid{
+    display:none;
+}
+.lfgJezici{
+    grid-column: 1/3;
+}
+.lfgRoles{
+   grid-column: 1/5;;
+}
+.roleImg{
+    width:15px;
+    height:25px;
+}
+.micimglfg{
+    width:20px;
+    height: 20px;
+    filter:invert(1);
+}
+.miclfgGreen{
+    background-color:rgb(8, 151, 8);
+}
+.miclfgRed{
+    background-color:rgb(156, 8, 8);
+}
+.rankColorIron{
+    background-color:rgba(121, 121, 121, 0.767);
+}
+.rankColorBronze{
+    background-color:#CD7F32;
+}
+.rankColorSilver{
+    background-color:#C0C0C0;
+    color:black;
+}
+.rankColorGold{
+    background-color:rgba(255, 217, 0, 0.698);
+}
+.rankColorPlatinum{
+    background-color:rgba(37, 224, 248, 0.829);
+}
+.rankColorDiamond{
+    background-color:rgba(231, 50, 222, 0.829);
+}
+.rankColorImmortal{
+    background-color:rgba(231, 50, 74, 0.829);
+}
+.rankColorRadiant{
+    background-color:#000000;
+    color:rgb(255, 253, 253);
+}
+#message{
+    font-weight: lighter;
+}
+@media screen and (max-width:1800px) {
+    #languages,#languages2,#languages3 ,#languages4{
+        font-size:13px;
+    }
+    .arrow{
+        left:236px;
+    }
+    .select-list-link{
+        width:250px;
+    }
+    .formularTekstina{
+        width:270px;
+    }
+    .drop-down3 .select-list3 li span,.drop-down2 .select-list2 li span,.drop-down .select-list li span  {
+        min-width:250px;
+        background-size: 125px 125px;
+        min-height:35px;
+    }
+    
+    .languageSel select{
+        width:250px;
+    }
+    .formularContainer{
+        height: 710px;
+    }
+    .fcPlayers{
+        height:580px;
+    }
+    .pleaselogin{
+        font-size:18px;
+        height:160px;
+    }
+}
+@media screen and (max-width:1600px) {
+    .Formular-tekst{
+        font-size:13px;
+    }
+    .containerFilteriLfg{
+        width:830px;
+    }
+    .lfgTittle{
+        font-size: 23px;
+    }
+    .lfgChild{
+        font-size:17px;
+    }
+    .select-list-link{
+        font-size:17px;
+    }
+    .drop-down3 .select-list3 ,.drop-down2 .select-list2,.drop-down .select-list {
+        margin-top:35px;
+    }
+    .drop-down3 .select-list3 li span,.drop-down2 .select-list2 li span,.drop-down .select-list li span {
+        min-height: 25px;
+    }
+    .formularContainer{
+        height: 640px;
+    }
+    .fcPlayers{
+        height:510px;
+    }
+    .languageSel select{
+        font-size:17px;
+    }
+    .marginTopFormular{
+        margin-top:60px;
+    }
+    .pleaselogin{
+        font-size:17px;
+        height:155px;
+    }
+    .lfgContainer2{
+        grid-gap:8px;
+    }
+}
+@media screen and (max-width:1400px) {
+    #languages,#languages2,#languages3 ,#languages4{
+        font-size:11px;
+    }
+    .arrow{
+        left:196px;
+    }
+    .lfgTittle{
+        font-size: 19px;
+    }
+    .containerFilteriLfg{
+        width:700px;
+    }
+    .select-list-link{
+        width:210px;
+    }
+    .drop-down3 .select-list3 ,.drop-down2 .select-list2,.drop-down .select-list {
+        margin-top:32px;
+    }
+    .drop-down3 .select-list3 li span,.drop-down2 .select-list2 li span,.drop-down .select-list li span  {
+        min-width:210px;
+        background-size: 110px 110px;
+        min-height:30px;
+        font-size:15px;
+    }
+    .formularTekstina{
+        width:230px;
+    }
+    .languageSel select{
+        width:210px;
+        font-size:14px;
+    }
+    .lfg-box{
+        font-size: 16px;
+    }
+    .lfgrolesbox{
+        font-size:15px;
+    }
+    .flag{
+        width:15px;
+        height:10px;
+    }
+    .lfgAvatarImg{
+        width:110px;
+        height:110px;
+    }
+    .playersneededtxt{
+        font-size:12px;
+    }
+    .select-list-link{
+        font-size:14px;
+    }
+    .Formular-tekst{
+        font-size:11px;
+    }
+    .formularContainer{
+        height: 600px;
+    }
+    .fcPlayers{
+        height:475px;
+    }
+    .pleaselogin{
+        font-size:16px;
+        height:150px;
+    }
+    .flag{
+        margin-right:3px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .arrow{
+        left:176px;
+    }
+    .mainTekst{
+        font-size:90px;
+        text-shadow: 4px 8px var(--main-color);
+        
+    }
+
+    .containerFilteriLfg{
+        width:600px;
+    }
+    .select-list-link{
+        width:190px;
+    }
+    .lfgTittle{
+        font-size: 17px;
+    }
+    .drop-down3 .select-list3 li span,.drop-down2 .select-list2 li span,.drop-down .select-list li span  {
+        min-width:190px;
+        background-size: 110px 110px;
+        min-height:20px;
+        font-size:12px;
+    }
+    .formularTekstina{
+        width:210px;
+    }
+    .languageSel select{
+        width:190px;
+    }
+    .lfg-box{
+        font-size: 13px;
+    }
+    .flag{
+        width:13px;
+        height:8px;
+    }
+}
+@media screen and (max-width:950px) {
+    .formularTekstina{
+        width:100%;
+    }
+    .glavniContainer{
+        margin-top:150px;
+        left:30%;
+    }
+    .mainTekst{
+        font-size:70px;
+        text-align:center;
+        width:600px;
+        text-shadow: 3px 6px var(--main-color);
+        
+    }
+    #languages,#languages2,#languages3 ,#languages4{
+        font-size:10px;
+    }
+    .select-list-link{
+        padding-bottom: 9px;
+    }
+    .glavniContainer2{
+        grid-template-areas:"formular" "filteri";
+    }
+    .glavniContainer
+    {
+        left: 51.5%; 
+        transform: translate(-50%, 0);
+    }
+    .formularContainer{
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        height:250px;
+    }
+    .marginTopFormular{
+        display:none;
+        margin-top: 0px;
+    }
+    .marginBottomFormular{
+        display:none;
+        margin-bottom: 0px;;
+    }
+    .submitgrid{
+        grid-column: 2/4;
+    }
+    .lfgContainer2{
+        grid-gap:7px;
+    }
+}
+@media screen and (max-width:690px) {
+    .drop-down3 .select-list3 ,.drop-down2 .select-list2,.drop-down .select-list {
+        margin-top:30px;
+    }
+    .lfgAvatar{
+        display: none;
+    }
+    .lfgContainer{
+        grid-template-columns:1fr;
+    }
+    .glavniContainer{
+        margin-top:20px;
+    }
+    .sld{
+        display:none;
+    }
+    .formularContainer{
+        padding:5px;
+    }
+
+    .lfgTittle{
+        font-size:17px;
+    }
+    .languageSel select{
+        font-size:11px;
+    }
+    .select-list-link{
+        font-size:11px;
+    }
+    .Formular-tekst{
+        font-size:15px;
+    }
+    input[type=checkbox] {
+        transform: scale(0.9);
+    }
+    .mainTekst{
+        font-size:60px;
+        width:500px;
+        text-shadow: 3px 6px var(--main-color);
+    }
+    .containerFilteriLfg{
+        width:500px;
+    }
+    .arrow{
+        left:146px;
+    }
+    .drop-down3 .select-list3 li span,.drop-down2 .select-list2 li span,.drop-down .select-list li span  {
+        min-width:160px;
+        background-size: 110px 110px;
+        min-height:20px;
+        font-size:12px;
+    }
+    .select-list-link{
+        width:160px;
+    }
+    .languageSel select{
+        width:160px;
+    }
+    .lfg-box{
+        font-size: 15px;
+    }
+    .playersneededtxt{
+        font-size:15px;
+    }
+    .lfgrolesbox{
+        font-size:14px;
+    }
+    .flag{
+        width:15px;
+        height:7.5px;
+        margin-right: 1px;
+    }
+    .lfgAvatarImg{
+        width:90px;
+        height:90px;
+    }
+    .lfgContainer2{
+        grid-gap:5px;
+    }
+}
+@media screen and (max-width:530px) {
+    .filteri{
+        grid-template-columns: 1fr 1fr;
+        padding:5px;
+    }
+    .formularContainer{
+        grid-template-columns: 1fr 1fr;
+        height:330px;
+    }
+    .submitgrid{
+        text-align: center;
+        grid-column: 1/3;
+    }
+    .messagegrid{
+        text-align: center;
+        grid-column: 1/3;
+    }
+    .lfgJezici{
+        grid-column: 2/4;
+    }
+    .lfgRoles{
+       grid-column: 1/4;;
+    }
+    .playersneededgrid{
+        display:block;
+    }
+    .lfgContainer2{
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    .glavniContainer{
+        width:400px;
+        left: 50%; 
+    }
+    .containerFilteriLfg{
+        width:400px;
+    }
+    .arrow{
+        left:171px;
+    }
+    .drop-down3 .select-list3 li span,.drop-down2 .select-list2 li span,.drop-down .select-list li span  {
+        min-width:185px;
+        background-size: 110px 110px;
+        min-height:20px;
+        font-size:12px;
+    }
+    .select-list-link{
+        
+        width:185px;
+    }
+    .languageSel select{
+        width:185px;
+    }
+    .mainTekst{
+        width:400px;
+        font-size:50px;
+    }
+    .filteriTekst{
+        font-size:25px;
+    }
+    .formularTekstina{
+        font-size:25px;
+    }
+    
+    .lfg-box{
+        font-size: 12px;
+    }
+    .playersneededtxt{
+        font-size:8px;
+    }
+    .lfgrolesbox{
+        font-size:10px;
+    }
+    .Formular-tekst{
+        font-size:12px;
+    }
+    .lfgAvatarImg{
+        width:75px;
+        height:75px;
+    }
+    .lfgTittle{
+        font-size:11px;
+    }
+    .flag{
+        width:15px;
+        height:7.5px;
+        margin-right: 3px;
+    }
+    .lfgContainer2{
+        grid-gap:3px;
+    }
+    
+}
+
+
+@media screen and (max-width:400px) {
+
+    .drop-down3 .select-list3 li span,.drop-down2 .select-list2 li span,.drop-down .select-list li span  {
+        min-width:140px;
+        background-size: 110px 110px;
+        min-height:20px;
+        font-size:12px;
+    }
+    .select-list-link{
+        
+        width:140px;
+    }
+    .arrow{
+        left:126px;
+    }
+    .languageSel select{
+
+        width:140px;
+    }
+    .playersneededgrid{
+        display:none;
+    }
+    .lfgContainer2{
+        grid-template-columns: 1fr 1fr ;
+    }
+    .lfgJezici{
+        grid-row: 3/4;
+        grid-column: 1/3;
+    }
+    .lfgRoles{
+       grid-column: 1/3;;
+    }
+    .glavniContainer{
+        width:310px;
+    }
+    .glavniContainer2{
+        grid-template-columns: 1fr;
+        width:310px;
+        padding:5px;
+    }
+    .containerFilteriLfg{
+        width:310px;
+    }
+    .mainTekst{
+        width:310px;
+        font-size:40px;
+    }
+    .lfgTittle{
+        font-size:20px;
+    }
+    .lfg-box{
+        font-size: 16px;
+    }
+    .playersneededtxt{
+        font-size:8px;
+    }
+    .lfgrolesbox{
+        font-size:12px;
+    }
+    .Formular-tekst{
+        font-size:13px;
+    }
+    .lfgAvatarImg{
+        width:50px;
+        height:50px;
+    }
+    .lfgContainer2{
+        grid-gap:2px;
+    }
+    .flag{
+        width:17px;
+        height:8.5px;
+        margin-right: 2px;
+    }
+    .formularContainer{
+        height:340px;
+    }
+}
+@media screen and (max-width:330px) {
+    .filteri{
+        grid-template-columns: 1fr;
+    }
+    .formularContainer{
+        grid-template-columns: 1fr;
+    }
+    .glavniContainer{
+        width:250px;
+    }
+    .glavniContainer2{
+        grid-template-columns: 1fr;
+        width:250px;
+        padding:5px;
+    }
+    .containerFilteriLfg{
+        width:250px;
+    }
+    .mainTekst{
+        width:250px;
+    }
+}

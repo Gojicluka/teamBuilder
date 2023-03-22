@@ -1,0 +1,172 @@
+.formaDiv
+{
+    float:right;
+    width:300px;
+    font-size:20px;
+    background-color: rgb(29, 29, 29);
+    text-align: center;
+    border: 2px solid var(--main-color);
+    color:white;
+  }
+  .tekst1
+{
+    color:rgb(255, 255, 255);
+    width:290px;
+  font-size:20px;
+  padding:8px;border:none;border-bottom:1px solid #ccc;;
+
+  background-color: rgba(255, 255, 255, 0);
+
+  margin-bottom:10px;
+}
+.tekst1 option{
+  background-color:white;
+  color:black;
+}
+.dugme1
+{
+  font-size:25px;
+  width:290px;
+  border: none;
+  padding: 16px 32px;
+  text-align: center;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid var(--main-color);
+  margin-bottom: 10px;
+  border-radius: 100px;
+}
+.dugme1PleaseLogin
+{
+  font-size:20px;
+  width:290px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  transition-duration: 0.1s;
+  cursor: pointer;
+  background-color: var(--main-color);
+  color: rgb(0, 0, 0);
+  color: white;
+  border: 1px solid var(--main-color);
+  margin-bottom: 10px;
+  border-radius: 100px;
+}
+.dugme1:hover ,.dugme1PleaseLogin:hover{
+  background-color: var(--button-hover-color);  
+  border: 1px solid var(--button-hover-color);
+  color: white;
+}
+.micdugme
+{
+  /*
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  */
+  padding:0px;
+  
+}
+.micimg{
+  /*filter:invert(1);*/
+  filter: invert(1);
+  width:50px;
+  height: 50px;
+}
+@media screen and (max-width:1800px) {
+  .tekst1{
+    width:250px;
+  }
+  .dugme1{
+    width:250px;
+    font-size:20px;
+    padding: 12px 24px;
+  }
+  .dugme1PleaseLogin{
+    width:250px;
+  }
+}
+@media screen and (max-width:1600px) {
+  .tekst1{
+    font-size:17px;
+}
+.dugme1{
+  font-size:18px;
+    padding: 11px 22px;
+}
+}
+@media screen and (max-width:1400px) {
+  .tekst1{
+    width:210px;
+  }
+  .dugme1{
+    width:210px;
+    font-size:17px;
+    padding: 10px 20px;
+  }
+  .tekst1{
+    font-size:14px;
+}
+.dugme1PleaseLogin{
+  width:210px;
+}
+}
+@media screen and (max-width:1200px) {
+  .tekst1{
+    width:190px;
+  }
+  .dugme1{
+    width:190px;
+  }
+  .dugme1PleaseLogin{
+    width:190px;
+  }
+  .pleaselogin{
+    text-align: center;
+  }
+  
+}
+@media screen and (max-width:690px) {
+  .tekst1{
+    width:160px;
+    font-size:11px;
+  }
+  .dugme1{
+    width:160px;
+  }
+  .dugme1PleaseLogin{
+    width:160px;
+  }
+}
+@media screen and (max-width:530px) {
+  .tekst1{
+    width:185px;
+  }
+  .dugme1{
+    width:185px;
+    font-size:12px;
+  }
+  .dugme1PleaseLogin{
+    width:185px;
+  }
+}
+@media screen and (max-width:400px) {
+  .tekst1{
+  }
+  .dugme1{
+    font-size:12px;
+  }
+  .tekst1{
+    width:140px;
+  }
+  .dugme1{
+    width:140px;
+  }
+  .dugme1PleaseLogin{
+    width:140px;
+  }
+}

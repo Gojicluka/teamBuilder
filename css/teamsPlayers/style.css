@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital@1&family=Raleway&display=swap%27');
+
+#ostatak {
+    /*background-image:url("../../images/teamsPlayers/agent-background-generic.JPG");*/
+    background-color: var(--background-color);
+    display:block;
+    position: static;
+    
+    height: 100%;
+    width: 100%;
+    z-index: 9;
+    color: white;
+}
+
+#slike {
+    width: 100%;
+    height: 45%;
+    position: static;
+    z-index: 0;
+    opacity: 0.55;
+}
+
+.sld {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: none;
+    overflow-y: visible;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.actived {
+    background-color: #ff4654;
+}
+
+
+.lfactive {
+    opacity: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+    li a {
+        text-decoration: none;
+        color: white;
+    }
+
+
+.lfg {
+    width: 100%;
+    height: 45%;
+    position: absolute;
+    z-index: 6;
+    align-items: center;
+}
+
+.midlfg {
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 30%;
+    left: 25%;
+    z-index: 7;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+}
+
+.bruh {
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 5%;
+}
+
+.filteri {
+    position: absolute;
+    height: 15%;
+    width: 50%;
+    left: 25%;
+    top: -5%;
+    background-color: #DE3C4B;
+    padding: 0;
+    margin: 0;
+}
+/*
+.posts {
+    position: absolute;
+    left: 20%;
+    width: 60%;
+    z-index: 19;
+    top: 15%;
+    height: 80%
+}
+
+.unit {
+    background-color: #DE3C4B;
+    height: 13%;
+}
+
+.title {
+    background-color: #0c131c;
+    width: 90%;
+    height: 20%;
+    align-items: flex-start;
+    font-size: x-large;
+}
+
+.pfp {
+    width: 35%;
+    height: 80%;
+}
+
+.pic {
+    padding-top: 10px;
+    padding-left: 20px;
+    width: 25%;
+}
+    .pic img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+    }
+
+.etc {
+    position: relative;
+    top: -80%;
+    left: 15%;
+    background-color: black;
+    color: white;
+    width: 80%;
+    height: 75%;
+}
+
+    .etc div {
+        background-color: #DE3C4B;
+    }
+
+.desc {
+    position: absolute;
+    top: 10%;
+    height: 30%;
+    width: 90%;
+    left: 5%;
+}
+
+.playtype {
+    position: absolute;
+    top: 60%;
+    height: 20%;
+    width: 30%;
+    left: 2.5%;
+}
+
+.vc {
+    position: absolute;
+    top: 60%;
+    height: 20%;
+    width: 30%;
+    left: 35%;
+}
+
+.ranked {
+    position: absolute;
+    top: 60%;
+    height: 20%;
+    width: 30%;
+    left: 67.5%;
+}*/
